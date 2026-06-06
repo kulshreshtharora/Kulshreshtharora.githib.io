@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kulshreshth Arora | Contact</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image/png" href="assets/favicon.png" />
+  </head>
+  <body>
+    <!-- Initial Loading Screen Overlay -->
+
+    <nav>
+      <a href="index.html" class="brand">KULSHRESHTHARORA<span>.LIFE</span></a>
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">The Mind</a>
+        <a href="ecosystem.html">Ecosystem</a>
+        <a href="contact.html" class="active">Connect</a>
+      </div>
+    </nav>
+
+    <div class="container">
+      <div class="card">
+        <h2>Reach Out</h2>
+        <p>
+          Whether you want to collaborate on software, discuss philosophy, or
+          talk business architecture, I am always open to interesting
+          conversations.
+        </p>
+
+        <div class="notice-block">
+          <strong>SBL Group Status:</strong>
+          Public operations are currently paused as I analyze the initial market
+          data and restructure the core architecture. My intention is to bring
+          it back online significantly stronger and more resilient.
+        </div>
+
+        <div class="social-container">
+          <a href="mailto:kulshreshtharora@yahoo.com" class="social-block"
+            >Mail</a
+          >
+          <a
+            href="https://www.linkedin.com/in/kulshreshtharora/"
+            target="_blank"
+            class="social-block"
+            ><span>LinkedIn</span></a
+          >
+          <a
+            href="http://www.instagram.com/kulshreshth_arora"
+            target="_blank"
+            class="social-block"
+            ><span>Instagram</span></a
+          >
+          <a
+            href="http://www.youtube.com/@Purnisher98"
+            target="_blank"
+            class="social-block"
+            ><span>YouTube</span></a
+          >
+          <a
+            href="https://sites.google.com/view/sblgroup-ltd/home"
+            target="_blank"
+            class="social-block"
+            ><span
+              >SBL Group <br />
+              <small style="font-size: 7px">(My Company)</small>
+            </span></a
+          >
+        </div>
+
+        <form action="https://api.web3forms.com/submit" method="POST">
+          <!-- Web3Forms Access Key Validation -->
+          <input
+            type="hidden"
+            name="access_key"
+            value="76e137a6-7017-439e-816a-e3daa1b897a4"
+          />
+
+          <div class="form-group">
+            <label for="name">Who are you?</label>
+            <input type="text" id="name" name="name" required />
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required />
+          </div>
+
+          <div class="form-group">
+            <label for="message">What's on your mind?</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+          </div>
+
+          <button type="submit" class="btn">Send Message</button>
+        </form>
+      </div>
+    </div>
+    <div class="social-container" id="contact_people_main">
+      <a href="idiot.html" target="_blank" class="social-block"
+        ><span>Divya Chaudhary</span></a
+      >
+      <a href="ramu.html" target="_blank" class="social-block"
+        ><span>Dev Verma</span></a
+      >
+      <a href="pk.html" target="_blank" class="social-block"
+        ><span>Priyanshu Kumar</span></a
+      >
+    </div>
+    <footer>
+      <div class="footer-container">
+        <div class="footer-col">
+          <h4>KULSHRESHTHARORA<span>.LIFE</span></h4>
+          <p>
+            A digital garden exploring software engineering, system
+            architecture, and continuous iteration.
+          </p>
+        </div>
+
+        <div class="footer-col">
+          <h4>System Map</h4>
+          <ul>
+            <li><a href="index.html">Home Node</a></li>
+            <li><a href="about.html">The Mind</a></li>
+            <li><a href="ecosystem.html">Ecosystem</a></li>
+            <li><a href="contact.html">Connect</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>The Network</h4>
+          <ul>
+            <li><a href="pk.html" target="_blank">Priyanshu Kumar</a></li>
+            <li><a href="ramu.html" target="_blank">Dev Verma</a></li>
+            <li><a href="idiot.html" target="_blank">Divya Chaudhary</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Kulshreshth Arora. All systems operational.</p>
+      </div>
+    </footer>
+
+    <script>
+      let lastScrollTop = 0;
+      const navbar = document.querySelector("nav");
+
+      window.addEventListener("scroll", () => {
+        let scrollTop =
+          window.pageYOffset || document.documentElement.scrollTop;
+        if (scrollTop > lastScrollTop) {
+          // Scrolling down: hide the navbar
+          navbar.classList.add("nav-hidden");
+        } else {
+          // Scrolling up: show the navbar
+          navbar.classList.remove("nav-hidden");
+        }
+        lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
+      });
+    </script>
+  </body>
+</html>

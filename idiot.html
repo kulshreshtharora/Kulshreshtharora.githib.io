@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Divya Chaudhary | Kulshreshth Arora</title>
+    <link rel="stylesheet" href="people_all.css" />
+  <link rel="icon" type="image/png" href="assets/favicon.png" />
+</head>
+
+  <body>
+<!-- Initial Loading Screen Overlay -->
+      
+    <nav>
+      <a href="index.html" class="brand">KULSHRESHTHARORA<span>.LIFE</span></a>
+      <div class="nav-links">
+        <a href="idiot.html" class="active">Divya Chaudhary</a>
+        <a href="ramu.html">Dev</a>
+        <a href="pk.html">Priyanshu</a>
+          <a href="contact.html" class="nav-cta">Connect</a>
+      </div>
+    </nav>
+
+<div class="container">
+      <div class="card">
+        <h2>Who I Am</h2>
+        <p>I am <strong>Divya Chaudhary</strong>, based in Haryana, INDIA. Right now i am exploring my options and trying to keep an open mind about the endless opportunities.</p>
+
+        <h3>My Ideology</h3>
+        <p>
+          I am a very big devotee of <i>Lord Krishna.</i> I believe that if
+          anything happens, there is always a reason behind it and that too
+          a good one for a better future. Just trust GOD and let him make his
+          moves. 
+        </p>
+
+        <h3>Background</h3>
+        <p>
+          I was born and brought up in Yamunanagar. I did my class 10th and
+          12th from SWIPS, YNR and am currently doing B.Tech in CSE from MM(DU), Where i met Kulshreshth Arora.
+        </p>
+
+        <h3>Things That I Believe In</h3>
+        <ul>
+          <li>
+            <span style="font-size: 0.8em">♥︎ </span>If something is going wrong, it's because GOD has a better plan for you.
+          </li>
+          <li>
+            <span style="font-size: 0.8em">♥︎ </span>Praying will help you to go
+            through anything, if not solve it.
+          </li>
+        </ul>
+      </div>
+            <div class="social-container">
+              <a
+              href="https://www.linkedin.com/in/choudhary-divya30/"
+              target="_blank"
+              class="social-block"
+              ><span>LinkedIn</span></a
+              >
+              <a href="http://www.divyapilania.life" class="social-block">Website</a>
+              <a href="https://www.instagram.com/allabout_divya_300" target="_blank" class="social-block">Instagram</a>
+      </div>
+    <footer>
+      <div class="footer-container">
+        <div class="footer-col">
+          <h4>KULSHRESHTHARORA<span>.LIFE</span></h4>
+          <p>
+            A digital garden exploring software engineering, system
+            architecture, and continuous iteration.
+          </p>
+        </div>
+
+        <div class="footer-col">
+          <h4>System Map</h4>
+          <ul>
+            <li><a href="index.html">Home Node</a></li>
+            <li><a href="about.html">The Mind</a></li>
+            <li><a href="ecosystem.html">Ecosystem</a></li>
+            <li><a href="contact.html">Connect</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>The Network</h4>
+          <ul>
+            <li><a href="pk.html" target="_blank">Priyanshu Kumar</a></li>
+            <li><a href="ramu.html" target="_blank">Dev Verma</a></li>
+            <li><a href="idiot.html" target="_blank">Divya Chaudhary</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Kulshreshth Arora. All systems operational.</p>
+      </div>
+    </footer>
+  
+<script>
+  let lastScrollTop = 0;
+  const navbar = document.querySelector('nav');
+
+  window.addEventListener('scroll', () => {
+    let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+    if (scrollTop > lastScrollTop) {
+      // Scrolling down: hide the navbar
+      navbar.classList.add('nav-hidden');
+    } else {
+      // Scrolling up: show the navbar
+      navbar.classList.remove('nav-hidden');
+    }
+    lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
+  });
+</script>
+</body>
+</html>

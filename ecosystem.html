@@ -3,67 +3,61 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Kulshreshth Arora | Life</title>
-
+    <title>Kulshreshth Arora | Ecosystem</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="icon" type="image/png" href="assets/favicon.png" />
   </head>
   <body>
-    <!-- Initial Loading Screen Overlay -->
-    <!-- Initial Loading Screen Overlay -->
-    <div class="loader-wrapper" id="loader">
-      <div class="loader-brand">KULSHRESHTHARORA<span>.LIFE</span></div>
-    </div>
     <nav>
       <a href="index.html" class="brand">KULSHRESHTHARORA<span>.LIFE</span></a>
       <div class="nav-links">
-        <a href="index.html" class="active">Home</a>
+        <a href="index.html">Home</a>
         <a href="about.html">The Mind</a>
-        <a href="ecosystem.html">Ecosystem</a>
-        <a href="contact.html">Connect</a>
+        <a href="ecosystem.html" class="active">Ecosystem</a>
+        <a href="contact.html"><strong>Connect</strong></a>
       </div>
     </nav>
 
     <div class="container">
-      <div class="hero">
-        <h1>Welcome to my digital garden.</h1>
-        <p class="lead">
-          I am Kulshreshth Arora, a 19-year-old builder, student, and thinker
-          based in Haryana, INDIA. This space documents my journey through
-          education, business operations, and continuous self-improvement.
-        </p>
-      </div>
+      <h1 class="header-title">My Ecosystem</h1>
+      <p class="header-sub">
+        The technical, commercial, and personal projects I am cultivating.
+      </p>
 
-      <div class="card">
-        <h2>Current Focus</h2>
-        <p style="color: var(--text-muted)">
-          Balancing my second semester in B.Tech with building a holding company
-          I always dream of... Restructuring my operational ventures, and
-          exploring the psychological frameworks of <em>Mastery</em>.
-        </p>
-        <a href="about.html" class="btn">Explore My Philosophy</a>
-      </div>
-      <div class="card" id="people">
-        <h3>My Support System</h3>
-        <p style="color: var(--text-muted)">
-          Met a lot of people <br />But, I think only a handful of them are
-          worth remembering.
-        </p>
-
-        <!-- Use your existing flex container instead of a paragraph! -->
-        <div class="social-container" style="margin-bottom: 2rem">
-          <a href="people.html" class="social-block"
-            ><span>Divya Chaudhary</span></a
-          >
-          <a href="people.html" class="social-block"
-            ><span>Priyanshu Kumar</span></a
-          >
-          <a href="people.html" class="social-block"><span>Dev Verma</span></a>
+      <div class="skills-grid">
+        <div class="skill-node">
+          <h3>Life & Development</h3>
+          <ul class="skill-list">
+            <li>Deep Reading & Philosophy</li>
+            <li>Collaborative Knowledge Building</li>
+            <li>Physical Wellness & Training</li>
+          </ul>
         </div>
 
-        <a href="people.html" class="btn">Explore My Support System</a>
+        <div class="skill-node">
+          <h3>Business & Operations</h3>
+          <ul class="skill-list">
+            <li>SBL Group Restructuring</li>
+            <li>Domain Management & Strategy</li>
+          </ul>
+        </div>
+        <div class="skill-node">
+          <h3>Engineering & Logic</h3>
+          <ul class="skill-list">
+            <li>Full-Stack Web (HTML/CSS, ASP.NET/C#)</li>
+            <li>Database Integration (Firebase)</li>
+            <li>Hackathons & Rapid Prototyping</li>
+          </ul>
+          <a
+            href="https://www.divyapilania.life/projects"
+            class="btn"
+            id="projects"
+            >Explore My Projects</a
+          >
+        </div>
       </div>
     </div>
+
     <footer>
       <div class="footer-container">
         <div class="footer-col">
@@ -100,6 +94,7 @@
     </footer>
 
     <script>
+      // Navigation Bar Hide/Show Logic
       let lastScrollTop = 0;
       const navbar = document.querySelector("nav");
 
